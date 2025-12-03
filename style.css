@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --branco: #fff;
+    --roxo: #4700cf;
+    --amarelo: #ffb340;
+    --preto: #000000;
+    --verde: #03a60b;
+}
+
+body{
+    background-color: var(--branco);
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    background-color: #000000;
+}
+
+header>div.container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #000000; */
+    height: 223px;
+}
+
+.container-flex{
+    width: 85%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
