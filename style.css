@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --branco: #fff;
     --roxo: #4700cf;
     --amarelo: #ffb340;
@@ -12,55 +12,185 @@
     --verde: #03a60b;
 }
 
-body{
+@font-face {
+    font-family: Recursive;
+    src: url(./font/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+}
+
+body {
     background-color: var(--branco);
 }
 
 /* HEADER */
 
-header{
+header {
     width: 100%;
     background-color: #000000;
 }
 
-header>div.container-flex{
+header>div.container-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 223px;
 }
 
-.container-flex{
+.container-flex {
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
 }
 
-#logo{
+#logo {
     width: 180px;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     gap: 27px;
 }
 
-.links a{
+.links a {
     font-size: 25px;
     color: var(--branco);
     text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
     color: var(--amarelo);
     border-bottom: 2px solid var(--roxo);
 }
 
 #icone-barras,
 #icone-x,
-#menu_botao{
+#menu_botao {
 
     display: none;
-    
+
+}
+
+#banner {
+    width: 100%;
+    height: calc(100vh - 223px);
+    object-fit: cover;
+}
+
+#motivacao{
+    padding-top: 100px;
+    display: flex;  
+    text-align: left;
+    font-size: 40px;
+
+}
+
+/* ------------------Serviços---------------- */
+
+#servicos {
+    margin-bottom: 120px;
+}
+
+#servicos .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#servicos h2 {
+    margin-left: 5px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+}
+
+.linha {
+    position: absolute;
+    z-index: -1;
+    top: calc(50%- 125px);
+
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgb(71, 0, 207)0%, rgb(255, 179, 207, 64)100%);
+}
+
+#servicos .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#servicos .card h3 {
+    font-size: 24px;
+    margin: 5px 0px 30px;
+    color: var(--roxo);
+    font-family: "recursive", sans-linear-bold;
+    text-align: center;
+}
+
+#servicos .card p {
+    font-family: "recursive", sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#servicos .card svg {
+    color: var(--preto);
+    height: 75px;
+}
+
+#servicos .card:hover {
+    border: solid 3px var(--verde);
+}
+
+#servicos .card:hover h3 {
+    color: var(--amarelo);
+}
+
+#servicos .card:hover svg {
+    fill: var(--amarelo);
+}
+
+#servicos {
+    margin-bottom: 120px;
+}
+
+#servicos .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#servicos h2 {
+    margin-left: 5px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#servicos .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
