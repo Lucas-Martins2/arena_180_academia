@@ -27,7 +27,6 @@ header>div.container-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #000000; */
     height: 223px;
 }
 
@@ -35,4 +34,33 @@ header>div.container-flex{
     width: 85%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+#logo{
+    width: 180px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.links a{
+    font-size: 25px;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--amarelo);
+    border-bottom: 2px solid var(--roxo);
+}
+
+#icone-barras,
+#icone-x,
+#menu_botao{
+
+    display: none;
+    
 }
